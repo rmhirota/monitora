@@ -1,0 +1,34 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# MonitorA
+
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+<!-- badges: end -->
+
+No contexto de eleições em meio à pandemia, as candidaturas vêm usando de forma ainda mais intensa e criativa redes sociais e aplicativos de mensagens como Whatsapp e Telegram, para publicizar suas ideias e propostas. E nesse ambiente virtual, as candidaturas de mulheres, negros(as) e LGBTI+ estão duramente expostas ao discurso de ódio e à violência política.
+
+Dados de 2019, da União Interparlamentar, a organização mundial dos parlamentos, mostram que mais de 80% das parlamentares no mundo já sofreram algum tipo de violência política, seja psicológica ou física. Mais: 39% delas afirmaram que a violência política minou a implementação de seus mandatos e sua liberdade de expressão.
+
+Sabemos que a violência política de gênero também é sexista em suas formas: para atacar mulheres, os agressores frequentemente apelam a estereótipos estigmatizantes vinculados ao corpo, à sexualidade, à estética e à beleza. Como mostra a literatura acadêmica, os homens são atacados pelo que dizem, enquanto as mulheres são atacadas pelo que são.
+
+Diante desse cenário, AzMina em parceria com o Instituto Update, e o InternetLab, se uniram para coletar e analisar comentários direcionados a candidatas de todos os espectros políticos, para compreender as dinâmicas da violência política de gênero e do discurso de ódio sexista contra as mulheres. 
+
+## Instalação
+
+``` r
+devtools::install_github("voltdatalab/monitora")
+```
