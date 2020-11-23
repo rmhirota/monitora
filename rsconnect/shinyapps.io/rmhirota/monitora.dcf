@@ -1,0 +1,10 @@
+name: monitora
+title:
+username:
+account: rmhirota
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3033547
+bundleId: 3895105
+url: https://rmhirota.shinyapps.io/monitora/
+when: 1606138922.74145

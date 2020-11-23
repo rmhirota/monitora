@@ -1,0 +1,10 @@
+name: monitora
+title:
+username:
+account: nucleojor
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3049697
+bundleId: 3896609
+url: https://nucleojor.shinyapps.io/monitora/
+when: 1606162153.4031

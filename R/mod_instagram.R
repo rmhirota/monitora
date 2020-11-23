@@ -475,7 +475,6 @@ mod_instagram_server <- function(id, app_data){
       content = function(file) {
         contagem <- da_terceiros() %>%
           dplyr::arrange(desc(likes)) %>%
-          head(50) %>%
           dplyr::transmute(
             candidata = paste0(candidata, " (", partido, ") | ",
                                cargo_pretendido, " | ", cidade, " - ", uf),

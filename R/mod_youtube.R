@@ -134,7 +134,7 @@ mod_youtube_server <- function(id, app_data){
       shiny::validate(
         shiny::need(
           nrow(da_proprios()) > 0,
-          "N\\u00e3o foi poss\\u00edvel gerar a visualiza\\u00e7\\u00e3o com os par\\u00e2metros selecionados."
+          "Não foi possível gerar a visualização com os parâmetros selecionados."
         )
       )
     })
@@ -142,7 +142,7 @@ mod_youtube_server <- function(id, app_data){
       shiny::validate(
         shiny::need(
           nrow(da_terceiros()) > 0,
-          "N\\u00e3o foi poss\\u00edvel gerar a visualiza\\u00e7\\u00e3o com os par\\u00e2metros selecionados."
+          "Não foi possível gerar a visualização com os parâmetros selecionados."
         )
       )
     })

@@ -142,8 +142,7 @@ mod_twitter_server <- function(id, app_data){
 
     da_v <- shiny::reactive({
       da_terceiros() %>%
-        dplyr::arrange(desc(!!rlang::sym(input$ordenar_por))) %>%
-        head(50)
+        dplyr::arrange(desc(!!rlang::sym(input$ordenar_por)))
     })
 
     validar_proprios <- shiny::reactive({
@@ -375,6 +374,7 @@ mod_twitter_server <- function(id, app_data){
           likes, RTs = rts,
           data
         ) %>%
+        head(50) %>%
         reactable::reactable(
           columns = list(
             candidata = reactable::colDef("Candidata", minWidth = 150),
