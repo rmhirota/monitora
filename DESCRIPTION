@@ -7,7 +7,33 @@ License: MIT + file LICENSE
 Imports: 
     config,
     golem,
-    shiny
+    shiny,
+    processx,
+    htmltools,
+    magrittr,
+    dplyr,
+    stringr,
+    purrr,
+    lubridate,
+    fs,
+    readr,
+    readODS,
+    shinydashboard,
+    reactable,
+    highcharter,
+    data.table,
+    httr,
+    tidyr,
+    xml2,
+    rlang,
+    scales,
+    shinyWidgets,
+    fresh
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat
+Roxygen: list(markdown = TRUE)
+Depends: 
+    R (>= 2.10)

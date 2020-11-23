@@ -1,12 +1,12 @@
 # Building a Prod-Ready, Robust Shiny Application.
-# 
-# README: each step of the dev files is optional, and you don't have to 
-# fill every dev scripts before getting started. 
-# 01_start.R should be filled at start. 
+#
+# README: each step of the dev files is optional, and you don't have to
+# fill every dev scripts before getting started.
+# 01_start.R should be filled at start.
 # 02_dev.R should be used to keep track of your development during the project.
 # 03_deploy.R should be used once you need to deploy your app.
-# 
-# 
+#
+#
 ###################################
 #### CURRENT FILE: DEV SCRIPT #####
 ###################################
@@ -15,16 +15,38 @@
 
 ## Dependencies ----
 ## Add one line by package you want to add as dependency
-usethis::use_package( "thinkr" )
+usethis::use_package( "dplyr" )
+usethis::use_package( "stringr" )
+usethis::use_package( "purrr" )
+usethis::use_package( "lubridate" )
+usethis::use_package( "fs" )
+usethis::use_package( "readr" )
+usethis::use_package( "readODS" )
+usethis::use_package( "shinydashboard" )
+usethis::use_package( "reactable" )
+usethis::use_package( "highcharter" )
+usethis::use_package( "data.table" )
+usethis::use_package( "httr" )
+usethis::use_package( "tidyr" )
+usethis::use_package( "xml2" )
+usethis::use_package( "bs4Dash" )
+usethis::use_package( "fresh" )
+usethis::use_package( "rlang" )
+usethis::use_package( "scales" )
+usethis::use_package( "shinyWidgets" )
+usethis::use_package( "tibble" )
+usethis::use_package( "viridis" )
 
 ## Add modules ----
 ## Create a module infrastructure in R/
-golem::add_module( name = "name_of_module1" ) # Name of the module
-golem::add_module( name = "name_of_module2" ) # Name of the module
+golem::add_module( name = "youtube" ) # Name of the module
+golem::add_module( name = "instagram" ) # Name of the module
+golem::add_module( name = "twitter" ) # Name of the module
+golem::add_module( name = "xingamento" ) # Name of the module
 
 ## Add helper functions ----
 ## Creates ftc_* and utils_*
-golem::add_fct( "helpers" ) 
+golem::add_fct( "helpers" )
 golem::add_utils( "helpers" )
 
 ## External resources
@@ -35,7 +57,7 @@ golem::add_css_file( "custom" )
 
 ## Add internal datasets ----
 ## If you have data in your package
-usethis::use_data_raw( name = "my_dataset", open = FALSE ) 
+usethis::use_data_raw( name = "my_dataset", open = FALSE )
 
 ## Tests ----
 ## Add one line by test you want to create
