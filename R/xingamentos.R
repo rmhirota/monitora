@@ -23,7 +23,7 @@ add_xingamentos <- function(base) {
           "defunt([:alpha:]*)?", "(?<!en)velh([:alpha:]*)?( feia)?", "véi[oa]", "assombra[cç][aã]o", "calabocamaria",
           # Joice
           "pep(p)?a", "porquinha", "🐽","riquinh[oa]", "soberb[oa]", "desesper([:alpha:]*)?", "circo", "gabinete de [oó]dio",
-          "escrot([:alpha:]*)?", "(?<!advo)gado", "pamonha",
+          "escrot([:alpha:]*)?", "(?<!(advo)|(obri))gado", "pamonha",
           # Covas
           "tucanato", "hip[oó]cri([:alpha:]*)?", "mafioso", "ladrão", "máfia .+creche", "fundamentalista", "lgbtfóbico",
           "careca", "extrmista", "arrogante", "mentiros([:alpha:]*)?", "mil[ií]cia([:alpha:]*)?", "d[oó]]rianuncamais",
@@ -84,7 +84,7 @@ add_lista_xingamentos <- function(base) {
           "defunt([:alpha:]*)?", "(?<!en)velh([:alpha:]*)?( feia)?", "véi[oa]", "assombra[cç][aã]o", "calabocamaria",
           # Joice
           "pep(p)?a", "porquinha", "🐽","riquinh[oa]", "soberb[oa]", "desesper([:alpha:]*)?", "circo", "gabinete de [oó]dio",
-          "escrot([:alpha:]*)?", "(?<!advo)gado", "pamonha",
+          "escrot([:alpha:]*)?", "(?<!(advo)|(obri))gado", "pamonha",
           # Covas
           "tucanato", "hip[oó]cri([:alpha:]*)?", "mafioso", "ladrão", "máfia .+creche", "fundamentalista", "lgbtfóbico",
           "careca", "extrmista", "arrogante", "mentiros([:alpha:]*)?", "mil[ií]cia([:alpha:]*)?", "d[oó]]rianuncamais",
