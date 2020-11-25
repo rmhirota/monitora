@@ -14,7 +14,7 @@ devtools::load_all()
 
 # Xingamentos -------------------------------------------------------------
 
-a <- da_tidy %>%
+a <- monitora::da_tidy %>%
   dplyr::select(-xingamento) %>%
   add_xingamentos()
 da_tidy <- a

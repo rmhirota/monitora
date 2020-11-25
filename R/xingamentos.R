@@ -6,11 +6,11 @@ add_xingamentos <- function(base) {
           "pilantra([:alpha:]*)?", "incompet[eê]n([:alpha:]*)?", "problema(s)? cognitivo(s)?", "piranha", "maconheir[oa]",
           "dar.* rabo", "vagabund([:alpha:]*)?", "louc[oa]", "maluc[oa]", "raça .*inferno", "fdp",
           "figura.* suja", "ser .*internada", "maria .*beco", "mimi(mi|zenta)", "vitimiz([:alpha:]*)?", "chupa",
-          "meu.* ovo", "rid[ií]cul([:alpha:]*)?", "porc[ao]", "canh[aã]o", "imund([:alpha:]*)?", "descontrolad[oa]",
+          "meu.* ovo", "rid[ií]cul([:alpha:]*)?", "porc[ao]", "canh[aã]o", "imund[oa](?![:alpha:])", "descontrolad[oa]",
           "minha.* pica", "inferno", "abortis[td]a", "ovo.* podre", "ir .*cadeleireiro", "conservagata",
           "s[ou]vaco ([:alpha:]*)?", "depila([:alpha:]*)?", "dissimulad([:alpha:]*)?", "desenhe .*v(o)?c([e|ê])?",
           "jument([:alpha:]*)?", "i[mn]becil([:alpha:]*)?", "idiot([:alpha:]*)?", "demente", "d[ou]ente",
-          "piranh([:alpha:]*)?", "(?<!d(e|is))puta", "cala.*boca", "quiet[oa]", "manga .*passada", "nojent([:alpha:]*)?",
+          "piranh([:alpha:]*)?", "(?<!d(e|is)|com)puta", "cala.*boca", "quiet[oa]", "manga .*passada", "nojent([:alpha:]*)?",
           "metid.*besta", "t[aá] namorando", "lava.*lou[cç]a", "vai.*tanque", "lacraia", "suj[oa]", "(?<!en)gord([:alpha:]*)?",
           "mequetrefe", "repugnante", "estrume", "mesma merda",
           # LGBTQA
@@ -23,7 +23,7 @@ add_xingamentos <- function(base) {
           "defunt([:alpha:]*)?", "(?<!en)velh([:alpha:]*)?( feia)?", "véi[oa]", "assombra[cç][aã]o", "calabocamaria",
           # Joice
           "pep(p)?a", "porquinha", "🐽","riquinh[oa]", "soberb[oa]", "desesper([:alpha:]*)?", "circo", "gabinete de [oó]dio",
-          "escrot([:alpha:]*)?", "(?<!(advo)|(obri))gado", "pamonha",
+          "escrot([:alpha:]*)?", "(?<![:alpha:])gado", "pamonha",
           # Covas
           "tucanato", "hip[oó]cri([:alpha:]*)?", "mafioso", "ladrão", "máfia .+creche", "fundamentalista", "lgbtfóbico",
           "careca", "extrmista", "arrogante", "mentiros([:alpha:]*)?", "mil[ií]cia([:alpha:]*)?", "d[oó]]rianuncamais",
@@ -67,11 +67,11 @@ add_lista_xingamentos <- function(base) {
           "pilantra([:alpha:]*)?", "incompet[eê]n([:alpha:]*)?", "problema(s)? cognitivo(s)?", "piranha", "maconheir[oa]",
           "dar.* rabo", "vagabund([:alpha:]*)?", "louc[oa]", "maluc[oa]", "raça .*inferno", "fdp",
           "figura.* suja", "ser .*internada", "maria .*beco", "mimi(mi|zenta)", "vitimiz([:alpha:]*)?", "chupa",
-          "meu.* ovo", "rid[ií]cul([:alpha:]*)?", "porc[ao]", "canh[aã]o", "imund([:alpha:]*)?", "descontrolad[oa]",
+          "meu.* ovo", "rid[ií]cul([:alpha:]*)?", "porc[ao]", "canh[aã]o", "imund[oa](?![:alpha:])", "descontrolad[oa]",
           "minha.* pica", "inferno", "abortis[td]a", "ovo.* podre", "ir .*cadeleireiro", "conservagata",
           "s[ou]vaco ([:alpha:]*)?", "depila([:alpha:]*)?", "dissimulad([:alpha:]*)?", "desenhe .*v(o)?c([e|ê])?",
           "jument([:alpha:]*)?", "i[mn]becil([:alpha:]*)?", "idiot([:alpha:]*)?", "demente", "d[ou]ente",
-          "piranh([:alpha:]*)?", "(?<!d(e|is))puta", "cala.*boca", "quiet[oa]", "manga .*passada", "nojent([:alpha:]*)?",
+          "piranh([:alpha:]*)?", "(?<!d(e|is)|com)puta", "cala.*boca", "quiet[oa]", "manga .*passada", "nojent([:alpha:]*)?",
           "metid.*besta", "t[aá] namorando", "lava.*lou[cç]a", "vai.*tanque", "lacraia", "suj[oa]", "(?<!en)gord([:alpha:]*)?",
           "mequetrefe", "repugnante", "estrume", "mesma merda",
           # LGBTQA
@@ -84,7 +84,7 @@ add_lista_xingamentos <- function(base) {
           "defunt([:alpha:]*)?", "(?<!en)velh([:alpha:]*)?( feia)?", "véi[oa]", "assombra[cç][aã]o", "calabocamaria",
           # Joice
           "pep(p)?a", "porquinha", "🐽","riquinh[oa]", "soberb[oa]", "desesper([:alpha:]*)?", "circo", "gabinete de [oó]dio",
-          "escrot([:alpha:]*)?", "(?<!(advo)|(obri))gado", "pamonha",
+          "escrot([:alpha:]*)?", "(?<![:alpha:])gado", "pamonha",
           # Covas
           "tucanato", "hip[oó]cri([:alpha:]*)?", "mafioso", "ladrão", "máfia .+creche", "fundamentalista", "lgbtfóbico",
           "careca", "extrmista", "arrogante", "mentiros([:alpha:]*)?", "mil[ií]cia([:alpha:]*)?", "d[oó]]rianuncamais",
