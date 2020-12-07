@@ -5,7 +5,7 @@
 \alias{da_xingamento}
 \title{Base tidy de conteúdo ofensivo}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 38071 rows and 28 columns.
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 191967 rows and 28 columns.
 }
 \usage{
 da_xingamento
