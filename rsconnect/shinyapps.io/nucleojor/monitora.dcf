@@ -5,6 +5,6 @@ account: nucleojor
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3049697
-bundleId: 3964435
+bundleId: 3964474
 url: https://nucleojor.shinyapps.io/monitora/
-when: 1607499334.73509
+when: 1607499908.37293
