@@ -5,7 +5,7 @@
 \alias{da_tidy}
 \title{Base tidy de conteúdo}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 1987557 rows and 27 columns.
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 1988549 rows and 27 columns.
 }
 \usage{
 da_tidy
