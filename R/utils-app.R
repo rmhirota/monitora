@@ -5,7 +5,7 @@ variaveis_cat <- function() {
     "UF" = "uf",
     "Município" = "cidade",
     "Gênero" = "genero",
-    "Conteúdo original (não RT)" = "tweet_original",
+    "Conteúdo original (não RT)" = "original",
     "Xingamento" = "xingamento",
     "Turno" = "turno"
   )

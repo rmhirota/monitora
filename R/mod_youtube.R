@@ -358,10 +358,14 @@ mod_youtube_server <- function(id, app_data){
           author,
           # url = paste0("https://twitter.com/", author, "/status/", status_id),
           link,
-          text,
+          id_texto,
           likes,
           data
         ) %>%
+        dplyr::left_join(
+          readr::read_rds("data-raw/da_texto.rds"), "id_texto"
+        ) %>%
+        dplyr::select(-id_texto) %>%
         reactable::reactable(
           columns = list(
             candidata = reactable::colDef("Candidata", minWidth = 150),
@@ -480,10 +484,12 @@ mod_youtube_server <- function(id, app_data){
                                cargo_pretendido, " | ", cidade, " - ", uf),
             author,
             link,
-            text,
+            id_texto,
             likes,
             data
-          )
+          ) %>%
+          dplyr::left_join(readr::read_rds("data-raw/da_texto.rds"), "id_texto") %>%
+          dplyr::select(-id_texto)
         readr::write_csv(contagem, file)
       }
     )

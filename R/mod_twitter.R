@@ -370,11 +370,15 @@ mod_twitter_server <- function(id, app_data){
           author,
           # url = paste0("https://twitter.com/", author, "/status/", status_id),
           status_id,
-          text,
           likes, RTs = rts,
-          data
+          data,
+          id_texto
         ) %>%
         head(50) %>%
+        dplyr::left_join(
+          readr::read_rds("data-raw/da_texto.rds"), "id_texto"
+        ) %>%
+        dplyr::select(-id_texto) %>%
         reactable::reactable(
           columns = list(
             candidata = reactable::colDef("Candidata", minWidth = 150),
@@ -493,10 +497,12 @@ mod_twitter_server <- function(id, app_data){
             author,
             link,
             status_id,
-            text,
+            id_texto,
             likes, RTs = rts,
             data
-          )
+          ) %>%
+          dplyr::left_join(readr::read_rds("data-raw/da_texto.rds"), "id_texto") %>%
+          dplyr::select(-id_texto)
         readr::write_csv(contagem, file)
       }
     )
